@@ -27,7 +27,12 @@ module.exports = {
       'small': {'max': '450px'},
       'medium': {'min': '451px', 'max': '1280px'},
       'larger': {'min': '1281px', 'max': '1750px'},
-      'extra-larger': {'min': '1751px'}
+      'extra-larger': {'min': '1751px'},
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
     },
   },
   plugins: [],
