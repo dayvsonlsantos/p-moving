@@ -23,6 +23,12 @@ module.exports = {
         'moving-blue': "#384550"
       }
     },
+    screens: {
+      'small': {'max': '450px'},
+      'medium': {'min': '451px', 'max': '1280px'},
+      'larger': {'min': '1281px', 'max': '1750px'},
+      'extra-larger': {'min': '1751px'}
+    },
   },
   plugins: [],
 }

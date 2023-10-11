@@ -1,5 +1,3 @@
-"use client"
-
 import Card from "@/components/card";
 import Header from "@/components/header";
 import Image from "@/components/image";
@@ -10,12 +8,26 @@ export default function Home() {
   return (
     <main className="w-full">
       <Logo srcLogo={"./logo.svg"} />
+      {/* small, medium, larger and extra-larger are screen measurements, configured in tailwinds.config.js */}
       <Image
-        bg_mobile={'/bg_home_mobile.png'}
-        bg_hd={'/bg_home_hd.png'}
-        bg_fullhd={'/bg_home_fullhd.png'}
-        bg_ultrawide={'/bg_home_ultrawide.png'}
+        srcImage={'./bg_home_mobile.png'}
         alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
+        class={'small:flex medium:hidden larger:hidden extra-larger:hidden'}
+      />
+      <Image
+        srcImage={'./bg_home_hd.png'}
+        alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
+        class={'small:hidden medium:flex larger:hidden extra-larger:hidden'}
+      />
+      <Image
+        srcImage={'./bg_home_fullhd.png'}
+        alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
+        class={'small:hidden medium:hidden larger:flex extra-larger:hidden'}
+      />
+      <Image
+        srcImage={'./bg_home_ultrawide.png'}
+        alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
+        class={'small:hidden medium:hidden larger:hidden extra-larger:flex'}
       />
       <Header
         srcIcon={'icon_hand.svg'}
