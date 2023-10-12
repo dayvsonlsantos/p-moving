@@ -15,12 +15,13 @@ module.exports = {
       colors: {
         'moving-orange-01': "#F0A65B",
         'moving-orange-01-35': "rgba(240, 166, 91, 0.35)",
-        'moving-blue': "#384550"
+        'moving-blue': "#384550",
       },
       backgroundColor: {
         'moving-orange-01': "#F0A65B !important",
         'moving-orange-01-35': "rgba(240, 166, 91, 0.35)",
-        'moving-blue': "#384550"
+        'moving-blue': "#384550",
+        'modal-shadow': 'rgba(0, 0, 0, 0.2)',
       }
     },
     screens: {

@@ -10,22 +10,22 @@ export default function Home() {
       <Logo srcLogo={"./logo.svg"} />
       {/* small, medium, larger and extra-larger are screen measurements, configured in tailwinds.config.js */}
       <Image
-        srcImage={'./bg_home_mobile.png'}
+        srcImage={'./bg_home_mobile.webp'}
         alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
         class={'small:flex medium:hidden larger:hidden extra-larger:hidden'}
       />
       <Image
-        srcImage={'./bg_home_hd.png'}
+        srcImage={'./bg_home_hd.webp'}
         alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
         class={'small:hidden medium:flex larger:hidden extra-larger:hidden'}
       />
       <Image
-        srcImage={'./bg_home_fullhd.png'}
+        srcImage={'./bg_home_fullhd.webp'}
         alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
         class={'small:hidden medium:hidden larger:flex extra-larger:hidden'}
       />
       <Image
-        srcImage={'./bg_home_ultrawide.png'}
+        srcImage={'./bg_home_ultrawide.webp'}
         alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
         class={'small:hidden medium:hidden larger:hidden extra-larger:flex'}
       />

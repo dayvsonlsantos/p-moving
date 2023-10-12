@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="flex items-center justify-center flex-col w-full  py-2 text-sm lg:text-base 2xl:text-lg">
+        <footer className="flex items-center justify-center flex-col w-full py-2 text-sm lg:text-base 2xl:text-lg">
             <section className="flex items-center justify-center flex-col md:flex-row w-full md:px-24 2xl:w-5/6">
                 <article className="flex items-center justify-start flex-col w-full md:w-1/2 mb-6">
                     <div className="w-full flex items-center justify-center md:justify-start">
@@ -14,7 +14,7 @@ export default function Footer() {
                         Seg à Sex ~ 09:00 - 18:00
                     </span>
                     <div className="text-justify w-full flex items-center justify-center md:justify-start">
-                        <p className="w-3/4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus at augue quis bibendum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus at augue quis bibendum.</p>
+                        <p className="w-3/5 md:w-4/5 2xl:w-3/4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus at augue quis bibendum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus at augue quis bibendum.</p>
                     </div>
                 </article>
                 <article className="flex items-center justify-end flex-col w-full md:w-1/2 mb-6">
