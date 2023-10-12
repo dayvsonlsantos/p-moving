@@ -1,11 +1,11 @@
 import Link from "next/link"
-import IconArrow from "./icons"
+import { IconArrow } from "./icons"
 
-export default function DropdownMenu({...props}) {
+export default function DropdownMenu({ ...props }) {
 
     return (
         <div onMouseEnter={props.closeOtherDropdown} className="cursor-pointer">
-            <span onMouseEnter={props.toggleDropdownMenu} className="flex items-center justify-center flex-row hover:text-moving-orange-01 transition duration-200 ease-in-out">{props.dropdownName}<IconArrow isDropdownMenu={props.isDropdownMenu}/> </span>
+            <span onMouseEnter={props.toggleDropdownMenu} className="flex items-center justify-center flex-row hover:text-moving-orange-01 transition duration-200 ease-in-out">{props.dropdownName}<IconArrow isDropdownMenu={props.isDropdownMenu} /> </span>
             {props.isDropdownMenu ? (
                 <div className="absolute rounded-xl bg-slate-50 p-4 mt-4 shadow-md">
                     <ul>
