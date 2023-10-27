@@ -1,6 +1,6 @@
 export const DropdownAboutUsLink = [
     { link: "/sobre", linkName: "Sobre a Moving" },
-    { link: "#", linkName: "História" },
+    { link: "/historia", linkName: "História" },
     { link: "#", linkName: "Clientes" },
 ]
 

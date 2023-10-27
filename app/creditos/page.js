@@ -1,4 +1,4 @@
-import { IconAboutUs, IconArrow, IconEmail, IconFile, IconGmail, IconHandShake, IconInstagram, IconMission, IconPhone, IconValues, IconVision, IconWhatsapp } from "@/components/icons";
+import { IconAboutUs, IconArrow, IconClose, IconEmail, IconFile, IconGmail, IconHandShake, IconHistory, IconInstagram, IconMenu, IconMission, IconPhone, IconValues, IconVision, IconWhatsapp } from "@/components/icons";
 import Logo from "@/components/logo";
 
 const ReferencesLinks = [
@@ -61,6 +61,21 @@ const ReferencesLinks = [
         link: "https://www.svgrepo.com/svg/473225/hand-holding-heart",
         linkName: "SVG Repo",
         linkIcon: <IconValues class="w-8 h-8" mainColor="currentcolor" /> 
+    },
+    {
+        link: "https://www.svgrepo.com/svg/527129/history",
+        linkName: "SVG Repo",
+        linkIcon: <IconHistory class="w-8 h-8" mainColor="#384550" secondColor="#384550"/>
+    },
+    {
+        link: "https://www.svgrepo.com/svg/509382/menu",
+        linkName: "SVG Repo",
+        linkIcon: <IconMenu class="w-8 h-8" mainColor="#384550"/>
+    },
+    {
+        link: "https://www.svgrepo.com/svg/526920/close-circle",
+        linkName: "SVG Repo",
+        linkIcon: <IconClose class="w-8 h-8" mainColor="#384550" xColor="#384550"/>
     },
 ]
 

@@ -1,6 +1,7 @@
 import Navbar from '@/components/navbar'
 import './globals.css' 
 import Footer from '@/components/footer'
+import NavbarMobile from '@/components/navbar_mobile'
 
 export const metadata = {
   title: 'Moving',
@@ -11,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body className='relative text-moving-blue'>
+        <NavbarMobile/>
         <Navbar />
         {children}
         <Footer />

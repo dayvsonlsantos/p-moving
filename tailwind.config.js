@@ -20,15 +20,17 @@ module.exports = {
       backgroundColor: {
         'moving-orange-01': "#F0A65B !important",
         'moving-orange-01-35': "rgba(240, 166, 91, 0.35)",
+        'moving-orange-01-15': "rgba(240, 166, 91, 0.15)",
         'moving-blue': "#384550",
         'modal-shadow': 'rgba(0, 0, 0, 0.2)',
-      }
+        'modal-shadow-darker': 'rgba(0, 0, 0, 0.3)'
+      },
     },
     screens: {
-      'small': {'max': '450px'},
-      'medium': {'min': '451px', 'max': '1280px'},
-      'larger': {'min': '1281px', 'max': '1750px'},
-      'extra-larger': {'min': '1751px'},
+      'small': { 'max': '450px' },
+      'medium': { 'min': '451px', 'max': '1280px' },
+      'larger': { 'min': '1281px', 'max': '1750px' },
+      'extra-larger': { 'min': '1751px' },
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',

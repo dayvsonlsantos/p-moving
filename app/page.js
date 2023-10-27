@@ -38,15 +38,17 @@ export default function Home() {
       </article>
       <section className="flex items-center justify-center w-full">
         <article className="flex items-center justify-evenly w-4/5 2xl:w-4/6 flex-col md:flex-row my-8">
-          <Card
+          <Card 
             selectIcon={<IconMission class="w-3/5" flagColor="#F0A65B" mainColor="#384550"/>}
             cardTextSpan='Missão'
-            cardTextContent={<p>Contribuir para o sucesso dos nossos clientes, através do desenvolvimento e engajamento das pessoas</p>}
+            cardTextContent={
+              <p>Potencializar o sucesso dos nossos clientes, por meio do desenvolvimento humano e do engajamento das pessoas</p>
+            }
           />
           <Card
             selectIcon={<IconVision class="w-3/5" mainColor="#384550"/>}
             cardTextSpan='Vissão'
-            cardTextContent={<p>Ser reconhecida como uma empresa em constante movimento e a melhor parceira de Recursos Humanos para o negócio.</p>}
+            cardTextContent={<p>Ser reconhecida como uma empresa em constante movimento rumo à excelência em Recursos Humanos para nossos clientes</p>}
           />
           <Card
             selectIcon={<IconValues class="w-3/5" mainColor="#384550"/>}
