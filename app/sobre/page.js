@@ -51,11 +51,11 @@ export default function Sobre() {
                         </li>
 
                         <li className="mb-4 w-11/12 before:content-['•'] before:text-moving-orange-01 before:mr-2">
-                            <span className="text-moving-orange-01 font-normal">Desenvolvimento da Liderança:</span> a empresa oferece mentorias individualizadas, palestras e treinamentos específicos para o desenvolvimento da liderança nas organizações, adaptados às necessidades de cada cliente.
+                            <span className="text-moving-orange-01 font-normal">Desenvolvimento da Liderança:</span> a empresa oferece mentorias individualizadas, palestras e treinamentos específicos para o desenvolvimento da liderança nas organizações.
                         </li>
 
                         <li className="mb-4 w-11/12 before:content-['•'] before:text-moving-orange-01 before:mr-2">
-                            <span className="text-moving-orange-01 font-normal">Valores orientadores:</span> a Moving RH se guia por valores como simplicidade, empatia, confiança, inovação e resultados, buscando proporcionar um serviço completo e eficaz aos seus clientes.
+                            <span className="text-moving-orange-01 font-normal">Valores orientadores:</span> a Moving RH se guia por valores como simplicidade, empatia, confiança, inovação e resultados, buscando proporcionar um serviço completo e eficaz.
                         </li>
 
                         <li className="mb-4 w-11/12 before:content-['•'] before:text-moving-orange-01 before:mr-2">

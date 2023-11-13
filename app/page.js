@@ -47,7 +47,7 @@ export default function Home() {
           />
           <Card
             selectIcon={<IconVision class="w-3/5" mainColor="#384550"/>}
-            cardTextSpan='Vissão'
+            cardTextSpan='Visão'
             cardTextContent={<p>Ser reconhecida como uma empresa em constante movimento rumo à excelência em Recursos Humanos para nossos clientes</p>}
           />
           <Card
