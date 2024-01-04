@@ -56,8 +56,8 @@ export default function Navbar() {
                         isDropdownMenu={isDropdownService} // Change Arrow Position by DropdownMenu State
                         selectDropdown={DropdownServiceLink} // Select the DropdownMenu to it's menu item
                     />
-                    <li onMouseEnter={closeBothDropdown} className="cursor-pointer hover:text-moving-orange-01 transition duration-200 ease-in-out">Contato</li>
-                    <li onMouseEnter={closeBothDropdown} className="bg-moving-orange-01 py-2 px-4 rounded-full text-white cursor-pointer transition duration-200 ease-in-out hover:scale-125">Vagas</li>
+                    <li onMouseEnter={closeBothDropdown} className="cursor-pointer hover:text-moving-orange-01 transition duration-200 ease-in-out"><Link href="/contato">Contato</Link></li>
+                    <li onMouseEnter={closeBothDropdown} className="bg-moving-orange-01 py-2 px-4 rounded-full text-white cursor-pointer transition duration-200 ease-in-out hover:scale-125"><Link href="/vagas">Vagas</Link></li>
                 </ul>
             </nav>
         </header>

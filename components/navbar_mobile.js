@@ -106,7 +106,7 @@ export default function NavbarMobile() {
 
                                 <Link
                                     className='w-full cursor-pointer hover:text-moving-orange-01 transition duration-200 ease-in-out'
-                                    href="#"
+                                    href="/contato"
                                     onClick={toogleNav}
                                 >
                                     <li className="w-full text-center py-4">Contato</li>
@@ -114,7 +114,7 @@ export default function NavbarMobile() {
 
                                 <Link
                                     className='my-4 w-4/5 bg-moving-orange-01 rounded-3xl text-white cursor-pointer transition duration-200 ease-in-out'
-                                    href="#"
+                                    href="/vagas"
                                     onClick={toogleNav}
                                 >
                                     <li className="text-center py-2">Vagas</li>
