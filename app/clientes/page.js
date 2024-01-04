@@ -2,28 +2,28 @@ import { IconAboutUs } from "@/components/icons";
 import Image from "@/components/image";
 import Logo from "@/components/logo";
 
-export default function Contato() {
+export default function Clientes() {
     return (
         <main className="w-full">
             <Logo srcLogo={"./logoWhite.svg"} />
             {/* small, medium, larger and extra-larger are screen measurements, configured in tailwinds.config.js */}
             <Image
-                srcImage={'./bg_contato_mobile.webp'}
+                srcImage={'./bg_clientes_mobile.webp'}
                 alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
                 class={'small:flex medium:hidden larger:hidden extra-larger:hidden'}
             />
             <Image
-                srcImage={'./bg_contato_hd.webp'}
+                srcImage={'./bg_clientes_hd.webp'}
                 alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
                 class={'small:hidden medium:flex larger:hidden extra-larger:hidden'}
             />
             <Image
-                srcImage={'./bg_contato_fullhd.webp'}
+                srcImage={'./bg_clientes_fullhd.webp'}
                 alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
                 class={'small:hidden medium:hidden larger:flex extra-larger:hidden'}
             />
             <Image
-                srcImage={'./bg_contato_ultrawide.webp'}
+                srcImage={'./bg_clientes_ultrawide.webp'}
                 alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
                 class={'small:hidden medium:hidden larger:hidden extra-larger:flex'}
             />

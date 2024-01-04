@@ -22,10 +22,10 @@ export default function Footer() {
                 </article>
                 <article className="flex items-center justify-end flex-col w-full md:w-1/2 mb-6">
                     <ul className="text-center md:text-right w-full">
-                        <li className="cursor-pointer hover:text-moving-orange-01 transition duration-200 ease-in-out">Termos Gerais e Condições</li>
-                        <li className="cursor-pointer hover:text-moving-orange-01 transition duration-200 ease-in-out">Políticas de Privacidade</li>
+                        <li className="cursor-pointer hover:text-moving-orange-01 transition duration-200 ease-in-out"><Link href="/em_desenvolvimento">Termos Gerais e Condições</Link></li>
+                        <li className="cursor-pointer hover:text-moving-orange-01 transition duration-200 ease-in-out"><Link href="/em_desenvolvimento">Políticas de Privacidade</Link></li>
                         <li className="cursor-pointer hover:text-moving-orange-01 transition duration-200 ease-in-out"><Link href="/desenvolvedores">Desenvolvedores</Link></li>
-                        <li className="cursor-pointer hover:text-moving-orange-01 transition duration-200 ease-in-out">Administrador</li>
+                        <li className="cursor-pointer hover:text-moving-orange-01 transition duration-200 ease-in-out"><Link href="/em_desenvolvimento">Administrador</Link></li>
                         <li className="cursor-pointer hover:text-moving-orange-01 transition duration-200 ease-in-out">
                             <Link href="/creditos">Creditos</Link>
                         </li>

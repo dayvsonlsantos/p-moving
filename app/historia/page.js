@@ -15,7 +15,7 @@ export default function Historia() {
                         no pulso esquerdo com a tela apagada e pulseira de metal. Segurando 
                         com ambas as mãos uma placa, escrita movingrh de fundo azul com manchas 
                         laranja e azul mais claro."
-                    className="w-full md:w-1/3 max-w-sm"
+                    className="w-full md:w-1/3 max-w-sm rounded-full"
                 />
                 <div className="my-8 larger:w-2/5 extra-larger:w-2/5 flex items-center justify-center flex-col">
                     <div className="flex items-center justify-center gap-4 flex-row">

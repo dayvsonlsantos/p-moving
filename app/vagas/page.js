@@ -2,28 +2,28 @@ import { IconAboutUs } from "@/components/icons";
 import Image from "@/components/image";
 import Logo from "@/components/logo";
 
-export default function Sobre() {
+export default function Vagas() {
     return (
         <main className="w-full">
-            <Logo srcLogo={"./logo.svg"} />
+            <Logo srcLogo={"./logoWhite.svg"} />
             {/* small, medium, larger and extra-larger are screen measurements, configured in tailwinds.config.js */}
             <Image
-                srcImage={'./bg_sobre_mobile.webp'}
+                srcImage={'./bg_vagas_mobile.webp'}
                 alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
                 class={'small:flex medium:hidden larger:hidden extra-larger:hidden'}
             />
             <Image
-                srcImage={'./bg_sobre_hd.webp'}
+                srcImage={'./bg_vagas_hd.webp'}
                 alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
                 class={'small:hidden medium:flex larger:hidden extra-larger:hidden'}
             />
             <Image
-                srcImage={'./bg_sobre_fullhd.webp'}
+                srcImage={'./bg_vagas_fullhd.webp'}
                 alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
                 class={'small:hidden medium:hidden larger:flex extra-larger:hidden'}
             />
             <Image
-                srcImage={'./bg_sobre_ultrawide.webp'}
+                srcImage={'./bg_vagas_ultrawide.webp'}
                 alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
                 class={'small:hidden medium:hidden larger:hidden extra-larger:flex'}
             />
