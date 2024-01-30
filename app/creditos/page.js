@@ -1,11 +1,11 @@
-import { IconAboutUs, IconArrow, IconClose, IconEmail, IconFile, IconGmail, IconHandShake, IconHistory, IconImages, IconInstagram, IconMenu, IconMission, IconPhone, IconValues, IconVision, IconWhatsapp } from "@/components/icons";
+import { IconAboutUs, IconArrow, IconClose, IconDoc, IconEmail, IconFile, IconGmail, IconHandShake, IconHeadset, IconHistory, IconImages, IconInstagram, IconLinkedin, IconMenu, IconMission, IconPhone, IconValues, IconVision, IconWhatsapp } from "@/components/icons";
 import Logo from "@/components/logo";
 
 const ReferencesLinks = [
     {
         link: "https://basicons.xyz/",
         linkName: "Basicons",
-        linkIcon: <IconFile />
+        linkIcon: <IconFile size={"w-4/5"}/>
     },
     {
         link: "https://fonts.google.com/icons?selected=Material+Symbols+Outlined:expand_more:FILL@0;wght@400;GRAD@0;opsz@24&icon.query=arrow",
@@ -15,7 +15,7 @@ const ReferencesLinks = [
     {
         link: "https://heroicons.com/",
         linkName: "Heroicons",
-        linkIcon: <IconAboutUs />
+        linkIcon: <IconAboutUs size={"w-4/4"}/>
     },
     {
         link: "https://heroicons.com/",
@@ -65,22 +65,37 @@ const ReferencesLinks = [
     {
         link: "https://www.svgrepo.com/svg/527129/history",
         linkName: "SVG Repo",
-        linkIcon: <IconHistory class="w-8 h-8" mainColor="#384550" secondColor="#384550" />
+        linkIcon: <IconHistory class="w-8 h-8" mainColor="currentcolor" secondColor="currentcolor" />
     },
     {
         link: "https://www.svgrepo.com/svg/509382/menu",
         linkName: "SVG Repo",
-        linkIcon: <IconMenu class="w-8 h-8" mainColor="#384550" />
+        linkIcon: <IconMenu class="w-8 h-8" mainColor="currentcolor" />
     },
     {
         link: "https://www.svgrepo.com/svg/526920/close-circle",
         linkName: "SVG Repo",
-        linkIcon: <IconClose class="w-8 h-8" mainColor="#384550" xColor="#384550" />
+        linkIcon: <IconClose class="w-8 h-8" mainColor="currentcolor" xColor="currentcolor" />
     },
     {
         link: "https://www.svgrepo.com/svg/506507/image",
         linkName: "SVG Repo",
-        linkIcon: <IconImages class="w-8 h-8" mainColor="#384550" />
+        linkIcon: <IconImages class="w-8 h-8" mainColor="currentcolor" />
+    },
+    {
+        link: "https://www.svgrepo.com/svg/437621/doc-text",
+        linkName: "SVG Repo",
+        linkIcon: <IconDoc class="w-8 h-8" mainColor="currentcolor" />
+    },
+    {
+        link: "https://www.svgrepo.com/svg/501613/linkedin",
+        linkName: "SVG Repo",
+        linkIcon: <IconLinkedin class="w-8 h-8" mainColor="currentcolor" />
+    },
+    {
+        link: "https://www.svgrepo.com/svg/502693/headset-mic-1",
+        linkName: "SVG Repo",
+        linkIcon: <IconHeadset class="w-8 h-8" mainColor="currentcolor" />
     },
 ]
 
@@ -137,7 +152,7 @@ export default function Creditos() {
                                 className="hover:scale-105 flex items-center justify-center flex-col border-2 h-20 w-52 border-moving-orange-01-35 rounded-full hover:bg-moving-orange-01 hover:text-white transition duration-200 ease-in-out"
                                 key={index}
                             >
-                                <div className="flex items-center justify-center w-10">{item.linkIcon}</div>
+                                <div className="flex items-center justify-center w-6">{item.linkIcon}</div>
                                 <p className="mt-2">{item.linkName}</p>
                             </a>
                         )

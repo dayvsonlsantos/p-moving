@@ -27,7 +27,7 @@ export default function Desenvolvedores() {
                     <p className="text-sm larger:text-base extra-larger:text-lg w-full text-justify mb-4 flex items-center justify-center flex-col">
                         🚀 Sobre as minhas experiências, você pode verificar nas minhas redes sociais:
                         <ul className="mt-2 text-center">
-                            <li><a href="" target="_blank" className="hover:text-moving-orange-01">Portfólio</a></li>
+                            {/* <li><a href="" target="_blank" className="hover:text-moving-orange-01">Portfólio</a></li> */}
                             <li><a href="https://www.linkedin.com/in/dayvsonlimasantos/" target="_blank" className="hover:text-moving-orange-01">Linkedin</a></li>
                             <li><a href="https://github.com/dayvsonlsantos" target="_blank" className="hover:text-moving-orange-01">Github</a></li>
                         </ul>

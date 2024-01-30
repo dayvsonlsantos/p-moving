@@ -17,7 +17,7 @@ export default function Footer() {
                         Seg à Sex ~ 09:00 - 18:00
                     </span>
                     <div className="text-justify w-full flex items-center justify-center md:justify-start">
-                        <p className="w-3/5 md:w-4/5 2xl:w-3/4">Um RH estratégico, alinhado ao negócio focado no desenvolvimento organizacional com profissionaisEspecialistas em Gestão de Pessoas.</p>
+                        <p className="w-3/5 md:w-4/5 2xl:w-3/4">Um RH estratégico, alinhado ao negócio focado no desenvolvimento organizacional com profissionais especialistas em Gestão de Pessoas.</p>
                     </div>
                 </article>
                 <article className="flex items-center justify-end flex-col w-full md:w-1/2 mb-6">
@@ -31,9 +31,15 @@ export default function Footer() {
                         </li>
                     </ul>
                     <div className="my-6 flex items-center justify-center md:justify-end flex-row w-full">
-                        <IconGmail w_8_h_8_text_moving_orange_01="w-8 h-8 text-moving-orange-01"/>
-                        <IconWhatsapp w_8_h_8_mx_6_text_moving_orange_01="w-8 h-8 mx-6 text-moving-orange-01"/>
-                        <IconInstagram w_8_h_8_text_moving_orange_01="w-8 h-8 text-moving-orange-01"/>
+                        <a href="mailto:contato@movingrh.com.br">
+                            <IconGmail w_8_h_8_text_moving_orange_01="w-8 h-8 text-moving-orange-01"/>
+                        </a>
+                        <a href="https://wa.me//5521988332645?text=Olá, gostaria de tirar uma dúvida." target="_blank">
+                            <IconWhatsapp w_8_h_8_mx_6_text_moving_orange_01="w-8 h-8 mx-6 text-moving-orange-01"/>
+                        </a>
+                        <a href="https://www.instagram.com/movingrh/" target="_blank">
+                            <IconInstagram w_8_h_8_text_moving_orange_01="w-8 h-8 text-moving-orange-01"/>
+                        </a>
                     </div>
                     <span className="w-full text-center md:text-right">Copyright © 2023 MovingRH</span>
                     <span className="w-full text-center md:text-right">Todos os Direitos Reservados</span>
