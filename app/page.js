@@ -4,32 +4,34 @@ import { IconMission, IconValues, IconVision } from "@/components/icons";
 import Image from "@/components/image";
 import Logo from "@/components/logo";
 
+let imageDetails = {
+  mobile: {
+      src: './bg_home_mobile.webp',
+      alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
+  },
+  hd: {
+      src: './bg_home_hd.webp',
+      alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
+  },
+  fullhd: {
+      src: './bg_home_fullhd.webp',
+      alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
+  },
+  ultrawide: {
+      src: './bg_home_ultrawide.webp',
+      alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
+  },
+}
+
 export default function Home() {
 
   return (
     <main className="w-full">
       <Logo srcLogo={"./logo.svg"} />
       {/* small, medium, larger and extra-larger are screen measurements, configured in tailwinds.config.js */}
-      <Image
-        srcImage={'./bg_home_mobile.webp'}
-        alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
-        class={'small:flex medium:hidden larger:hidden extra-larger:hidden'}
-      />
-      <Image
-        srcImage={'./bg_home_hd.webp'}
-        alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
-        class={'small:hidden medium:flex larger:hidden extra-larger:hidden'}
-      />
-      <Image
-        srcImage={'./bg_home_fullhd.webp'}
-        alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
-        class={'small:hidden medium:hidden larger:flex extra-larger:hidden'}
-      />
-      <Image
-        srcImage={'./bg_home_ultrawide.webp'}
-        alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
-        class={'small:hidden medium:hidden larger:hidden extra-larger:flex'}
-      />
+      
+      <Image imageDetails={imageDetails}/>
+
       <Header
         text={'Potencializamos empresas através das Pessoas!'}
       />

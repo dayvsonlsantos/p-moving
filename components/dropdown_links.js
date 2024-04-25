@@ -5,7 +5,7 @@ export const DropdownAboutUsLink = [
 ]
 
 export const DropdownServiceLink = [
-    { link: "/em_desenvolvimento", linkName: "Recrutamento e Seleção" },
-    { link: "/em_desenvolvimento", linkName: "BP de RH" },
-    { link: "/em_desenvolvimento", linkName: "Treinamento e Desenvolvimento" },
+    { link: "/recrutamento", linkName: "Recrutamento e Seleção" },
+    { link: "/outsourcing", linkName: "Outsourcing de RH" },
+    { link: "/treinamento", linkName: "Treinamento e Desenvolvimento" },
 ]

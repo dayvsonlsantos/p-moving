@@ -10,32 +10,32 @@ export default function Contato() {
 
     const notify = () => toast("E-mail enviado!");
 
+    let imageDetails = {
+        mobile: {
+            src: './bg_contato_mobile.webp',
+            alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
+        },
+        hd: {
+            src: './bg_contato_hd.webp',
+            alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
+        },
+        fullhd: {
+            src: './bg_contato_fullhd.webp',
+            alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
+        },
+        ultrawide: {
+            src: './bg_contato_ultrawide.webp',
+            alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
+        },
+    }
+
     return (
         <main className="w-full">
-
-
             <Logo srcLogo={"./logoWhite.svg"} />
             {/* small, medium, larger and extra-larger are screen measurements, configured in tailwinds.config.js */}
-            <Image
-                srcImage={'./bg_contato_mobile.webp'}
-                alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
-                class={'small:flex medium:hidden larger:hidden extra-larger:hidden'}
-            />
-            <Image
-                srcImage={'./bg_contato_hd.webp'}
-                alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
-                class={'small:hidden medium:flex larger:hidden extra-larger:hidden'}
-            />
-            <Image
-                srcImage={'./bg_contato_fullhd.webp'}
-                alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
-                class={'small:hidden medium:hidden larger:flex extra-larger:hidden'}
-            />
-            <Image
-                srcImage={'./bg_contato_ultrawide.webp'}
-                alt={'Três pessoas sentadas conversando numa reunião de negócios.'}
-                class={'small:hidden medium:hidden larger:hidden extra-larger:flex'}
-            />
+            
+            <Image imageDetails={imageDetails}/>
+
             <section className="flex items-center justify-center w-full flex-col">
                 <div className="flex items-center justify-center w-20 mb-12 h-20 rounded-full bg-moving-orange-01-35">
                     {/* <img className="w-3/5" src={'./icons/icon_aboutus.svg'} alt={'Icone ilustrando três pessoas'} /> */}
