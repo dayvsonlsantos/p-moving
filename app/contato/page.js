@@ -65,7 +65,7 @@ export default function Contato() {
 
                     <h1 className="text-base medium:text-base larger:text-lg extra-larger:text-xl font-normal mb-2">Entre em Contato</h1>
 
-                    <form action="https://formsubmit.co/dayvson.l.senac@gmail.com" method="POST" className="medium:w-5/6">
+                    <form action="https://formsubmit.co/contato@movingrh.com.br" method="POST" className="lg:w-5/6">
                         <div className="flex items-center justify-center flex-col md:flex-row w-full gap-4 mt-4">
                             <input className="p-2 rounded-2xl border border-moving-orange-01-35 w-full text-sm larger:text-base extra-larger:text-lg" type="text" name="full_name" id="full_name" required placeholder="Nome completo" />
                             <input className="p-2 rounded-2xl border border-moving-orange-01-35 w-full text-sm larger:text-base extra-larger:text-lg" type="email" name="email" id="email" required placeholder="E-mail" />
@@ -79,7 +79,7 @@ export default function Contato() {
                             <button type="submit"  className="px-4 py-2 bg-moving-orange-01-35 rounded-lg text-sm larger:text-base extra-larger:text-lg">Enviar</button>
                         </div>
 
-                        <input type="hidden" name="_next" value="http://localhost:3000/" />
+                        {/* <input type="hidden" name="_next" value="http://localhost:3000/" /> */}
                     </form>
 
 

@@ -28,6 +28,48 @@ let pageContent = {
         {
             content: 'Ficaremos felizes em trabalhar lado a lado com você, ajudando a moldar um ambiente de trabalho mais produtivo, colaborativo e orientado para o sucesso. Juntos, podemos alcançar conquistas notáveis e criar um futuro brilhante para sua organização.'
         }
+    ],
+    topic: 'Missão, visão e valores',
+    itens: [
+        {
+            name: 'Missão',
+            highlighted: 'Potencializar o sucesso dos nossos clientes, por meio do desenvolvimento humano e do engajamento das pessoas.',
+            paragraph: 'Nosso compromisso fundamental é criar um ambiente onde o sucesso de nossos clientes não seja apenas uma meta, mas uma realidade tangível. Acreditamos que o desenvolvimento humano é fundamental para alcançar esse sucesso duradouro. Quando investimos nas habilidades, conhecimentos e bem-estar das pessoas, estamos construindo uma base para o crescimento e realizações contínuas.'
+        },
+        {
+            name: 'Visão',
+            highlighted: 'Ser reconhecida como uma empresa em constante movimento rumo à excelência em Recursos Humanos para nossos clientes.',
+            paragraph: 'Na Moving RH, nossa visão transcende os limites convencionais. Visualizamos uma jornada contínua de progresso e inovação, sempre em movimento para moldar o futuro acompanhando as tendências de mercado.'
+        },
+        {
+            name: 'Valores',
+            content: [
+                {
+                    item_name: 'Trabalho em Equipe:',
+                    item_description: 'A coesão e a harmonia estimulam a colaboração e a comunicação aberta, permitindo que ideias fluam livremente e problemas sejam resolvidos de maneira eficaz.'
+                },
+                {
+                    item_name: 'Empatia:',
+                    item_description: 'Quando praticamos a empatia e nos colocamos no lugar do outro, construímos conexões significativas e duradouras.'
+                },
+                {
+                    item_name: 'Simplicidade:',
+                    item_description: 'Simplicidade, clareza e qualidade não apenas aumentam a eficiência, mas também nos capacitam a cumprir nossas responsabilidades de maneira ética e eficaz.'
+                },
+                {
+                    item_name: 'Fazer acontecer:',
+                    item_description: 'Faça. Comece agora, concentre-se no resultado e no alcance de suas metas.'
+                },
+                {
+                    item_name: 'Inovação:',
+                    item_description: 'Explore novas ideias, inove e fique sempre atento às necessidades do mercado. Este é um chamado para um comportamento proativo e estratégico no mundo dos negócios.'
+                },
+                {
+                    item_name: 'Olho do dono:',
+                    item_description: 'Tenha atitude de dono, comprometa-se e tenha responsabilidade. Esse princípio é uma chamada para a excelência e a liderança pessoal em tudo o que fazemos.'
+                },
+            ]
+        },
     ]
 
 }
@@ -64,7 +106,7 @@ export default function Sobre() {
                     {/* <img className="w-3/5" src={'./icons/icon_aboutus.svg'} alt={'Icone ilustrando três pessoas'} /> */}
                     <IconAboutUs />
                 </div>
-                <article className="my-12 flex items-center justify-center w-full flex-col">
+                <article className="my-8 flex items-center justify-center w-full flex-col">
                     <p className="text-sm larger:text-base extra-larger:text-lg w-3/5 md:w-4/5 2xl:w-3/4 text-justify mb-4 flex items-center justify-center">
                         {pageContent.headerInfo}
                     </p>
@@ -91,8 +133,46 @@ export default function Sobre() {
                             )
                         })
                     }
+
+                    <p className="font-normal text-moving-orange-01 text-base larger:text-lg extra-larger:text-xl w-3/5 md:w-4/5 2xl:w-3/4 text-justify my-8 flex items-center justify-center">
+                        {pageContent.topic}
+                    </p>
+
+                    {
+                        pageContent.itens.map(function(element) {
+                            if(element.name != 'Valores'){
+                                return (
+                                    <section className="w-3/5 md:w-4/5 2xl:w-3/4 my-2">
+                                        <span className="text-base larger:text-lg extra-larger:text-xl font-normal text-moving-orange-01 text-justify mb-4 flex items-center justify-center md:justify-start">{element.name}</span>
+                                        <span className="text-sm font-normal larger:text-base extra-larger:text-lg text-justify mb-4 flex items-center justify-start">{element.highlighted}</span>
+                                        <p className="text-sm larger:text-base extra-larger:text-lg text-justify mb-4 flex items-center justify-start">{element.paragraph}</p>
+                                    </section>
+                                )
+                            } else {
+                                return(
+                                    <section className="w-3/5 md:w-4/5 2xl:w-3/4 my-2">
+                                        <span className="text-base larger:text-lg extra-larger:text-xl font-normal text-moving-orange-01 text-justify mb-4 flex items-center justify-center md:justify-start">{element.name}</span>
+                                        <ul>
+                                        {
+                                            element.content.map(function(element){
+                                                return(
+                                                    <li className="list-disc ml-5">
+                                                        <p className="text-sm larger:text-base extra-larger:text-lg text-justify mb-4">
+                                                            <span className="mr-2 font-normal">{element.item_name}</span>
+                                                            {element.item_description}
+                                                        </p>
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                        </ul>
+                                    </section>
+                                )
+                            }
+                        })
+                    }
                 </article>
-                <hr className="rounded-full border-4 w-4/6 md:w-5/6 mb-12 border-moving-orange-01-35" />
+                {/* <hr className="rounded-full border-4 w-4/6 md:w-5/6 mb-12 border-moving-orange-01-35" /> */}
             </section>
         </main>
     )

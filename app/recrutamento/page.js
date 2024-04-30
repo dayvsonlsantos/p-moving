@@ -27,19 +27,19 @@ let pageContent = {
 
 let imageDetails = {
     mobile: {
-        src: './bg_home_mobile.webp',
+        src: './bg_recrutamento_mobile.webp',
         alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
     },
     hd: {
-        src: './bg_home_hd.webp',
+        src: './bg_recrutamento_hd.webp',
         alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
     },
     fullhd: {
-        src: './bg_home_fullhd.webp',
+        src: './bg_recrutamento_fullhd.webp',
         alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
     },
     ultrawide: {
-        src: './bg_home_ultrawide.webp',
+        src: './bg_recrutamento_ultrawide.webp',
         alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
     },
 }
@@ -47,7 +47,7 @@ let imageDetails = {
 export default function Recrutamento() {
     return (
         <main className="w-full">
-            <Logo srcLogo={"./logo.svg"} />
+            <Logo srcLogo={"./logoWhite.svg"} />
             {/* small, medium, larger and extra-larger are screen measurements, configured in tailwinds.config.js */}
 
             <Image imageDetails={imageDetails}/>

@@ -21,6 +21,45 @@ let imageDetails = {
     },
 }
 
+let clients = [
+    {
+        name: 'IGT Motors',
+    },
+    {
+        name: 'Fox Creche Escola Bilingue',
+    },
+    {
+        name: 'Grupo Kovalen',
+    },
+    {
+        name: 'Global Trend',
+    },
+    {
+        name: 'OdontoLiuzzi',
+    },
+    {
+        name: 'Rede Economia',
+    },
+    {
+        name: 'Top Esmalteria',
+    },
+    {
+        name: 'MQ Corretora',
+    },
+    {
+        name: 'Street',
+    },
+    {
+        name: 'Nova GM',
+    },
+    {
+        name: 'Rota GNV',
+    },
+    {
+        name: 'LogIn Logística',
+    },
+]
+
 export default function Clientes() {
     return (
         <main className="w-full">
@@ -33,7 +72,19 @@ export default function Clientes() {
                     <IconAboutUs />
                 </div>
                 
-                <hr className="rounded-full border-4 w-4/6 md:w-5/6 mb-12 border-moving-orange-01-35" />
+                {/* <hr className="rounded-full border-4 w-4/6 md:w-5/6 mb-12 border-moving-orange-01-35" /> */}
+
+                <section className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 text-center gap-3 my-10">
+                {
+                    clients.map(function(element)  {
+                        return (
+                            <section className="p-4 m-2 bg-moving-orange-01-15 rounded-3xl font-light text-sm transition duration-200 ease-in-out hover:scale-110 hover:bg-moving-orange-01 hover:text-white hover:font-normal">
+                                {element.name}
+                            </section>
+                        )
+                    })
+                }
+                </section>
             </section>
         </main>
     )

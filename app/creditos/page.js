@@ -100,18 +100,18 @@ const ReferencesLinks = [
 ]
 
 const ReferencesImages = [
-    {
-        link: "https://www.freepik.com/free-photo/smiling-businesswoman-shaking-hand-male-partner-group-meeting_3939784.htm",
-        url: "./images/imagem01.webp",
-        site: "Image por yanalya no Freepik",
-        alt: "Três pessoas conversando e sorrindo numa reunião de negócios"
-    },
-    {
-        link: "https://br.freepik.com/fotos-gratis/empresarios-sorridentes-com-comida_13377836.htm#&position=16&from_view=collections",
-        url: "./images/imagem02.webp",
-        site: "Freepik",
-        alt: "Quatro pessoas conversando e sorrindo numa reunião de planejamento"
-    },
+    // {
+    //     link: "https://www.freepik.com/free-photo/smiling-businesswoman-shaking-hand-male-partner-group-meeting_3939784.htm",
+    //     url: "./images/imagem01.webp",
+    //     site: "Image por yanalya no Freepik",
+    //     alt: "Três pessoas conversando e sorrindo numa reunião de negócios"
+    // },
+    // {
+    //     link: "https://br.freepik.com/fotos-gratis/empresarios-sorridentes-com-comida_13377836.htm#&position=16&from_view=collections",
+    //     url: "./images/imagem02.webp",
+    //     site: "Freepik",
+    //     alt: "Quatro pessoas conversando e sorrindo numa reunião de planejamento"
+    // },
     {
         link: "https://br.freepik.com/fotos-gratis/pessoas-negocio-apertar-mao-em-um-sala-reuniao_2770459.htm#query=business-people-shaking-hands-meeting-room%201&position=8&from_view=search&track=ais",
         url: "./images/imagem03.webp",
