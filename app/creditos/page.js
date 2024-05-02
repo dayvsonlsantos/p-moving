@@ -1,5 +1,8 @@
+import Footer from "@/components/footer";
 import { IconAboutUs, IconArrow, IconClose, IconDoc, IconEmail, IconFile, IconGmail, IconHandShake, IconHeadset, IconHistory, IconImages, IconInstagram, IconLinkedin, IconMenu, IconMission, IconPhone, IconValues, IconVision, IconWhatsapp } from "@/components/icons";
 import Logo from "@/components/logo";
+import Navbar from "@/components/navbar";
+import NavbarMobile from "@/components/navbar_mobile";
 
 const ReferencesLinks = [
     {
@@ -135,53 +138,58 @@ const ReferencesImages = [
 
 export default function Creditos() {
     return (
-        <main className="w-full">
-            <Logo srcLogo={"./logo.svg"} />
-            <section className="flex items-center justify-center w-full flex-col pt-28">
-                <div className="flex items-center justify-center w-20 h-20 rounded-full bg-moving-orange-01-35">
-                    {/* <img className="w-3/5" src={'./icons/icon_aboutus.svg'} alt={'Icone ilustrando três pessoas'} /> */}
-                    <IconFile />
-                </div>
-                <article className="my-20 justify-center grid grid-cols-1 medium:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
-                    {ReferencesLinks.map((item, index) => {
-                        return (
-                            <a
-                                href={item.link}
-                                target="_blank"
-                                // py-4 px-10
-                                className="hover:scale-105 flex items-center justify-center flex-col border-2 h-20 w-52 border-moving-orange-01-35 rounded-full hover:bg-moving-orange-01 hover:text-white transition duration-200 ease-in-out"
-                                key={index}
-                            >
-                                <div className="flex items-center justify-center w-6">{item.linkIcon}</div>
-                                <p className="mt-2">{item.linkName}</p>
-                            </a>
-                        )
-                    })}
-                </article>
-                <hr className="rounded-full border-4 w-4/6 md:w-5/6 mb-12 border-moving-orange-01-35" />
-            </section>
-            <section className="flex items-center justify-center w-full flex-col pt-14">
-                <div className="flex items-center justify-center w-20 h-20 rounded-full bg-moving-orange-01-35">
-                    <IconImages class="w-10 h-10" mainColor="#384550" />
-                </div>
-                <article className="my-20 justify-center flex items-center flex-col w-4/6">
-                    {ReferencesImages.map((item, index) => {
-                        return (
-                            <a
-                                href={item.link}
-                                target="_blank"
-                                // py-4 px-10
-                                className="hover:scale-105 my-4 p-5 flex items-center justify-center flex-col border-2 h-full w-full border-moving-orange-01-35 rounded-2xl transition duration-200 ease-in-out"
-                                key={index}
-                            >
-                                <div className="w-100 flex items-center justify-center"><img className="rounded-2xl" src={item.url} alt={item.alt}/></div>
-                                <p className="mt-4 text-sm font-light">{item.site}</p>
-                            </a>
-                        )
-                    })}
-                </article>
-                <hr className="rounded-full border-4 w-4/6 md:w-5/6 mb-12 border-moving-orange-01-35" />
-            </section>
-        </main>
+        <>
+            <NavbarMobile/>
+            <Navbar />
+            <main className="w-full">
+                <Logo srcLogo={"/logo.svg"} />
+                <section className="flex items-center justify-center w-full flex-col pt-28">
+                    <div className="flex items-center justify-center w-20 h-20 rounded-full bg-moving-orange-01-35">
+                        {/* <img className="w-3/5" src={'./icons/icon_aboutus.svg'} alt={'Icone ilustrando três pessoas'} /> */}
+                        <IconFile />
+                    </div>
+                    <article className="my-20 justify-center grid grid-cols-1 medium:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
+                        {ReferencesLinks.map((item, index) => {
+                            return (
+                                <a
+                                    href={item.link}
+                                    target="_blank"
+                                    // py-4 px-10
+                                    className="hover:scale-105 flex items-center justify-center flex-col border-2 h-20 w-52 border-moving-orange-01-35 rounded-full hover:bg-moving-orange-01 hover:text-white transition duration-200 ease-in-out"
+                                    key={index}
+                                >
+                                    <div className="flex items-center justify-center w-6">{item.linkIcon}</div>
+                                    <p className="mt-2">{item.linkName}</p>
+                                </a>
+                            )
+                        })}
+                    </article>
+                    <hr className="rounded-full border-4 w-4/6 md:w-5/6 mb-12 border-moving-orange-01-35" />
+                </section>
+                <section className="flex items-center justify-center w-full flex-col pt-14">
+                    <div className="flex items-center justify-center w-20 h-20 rounded-full bg-moving-orange-01-35">
+                        <IconImages class="w-10 h-10" mainColor="#384550" />
+                    </div>
+                    <article className="my-20 justify-center flex items-center flex-col w-4/6">
+                        {ReferencesImages.map((item, index) => {
+                            return (
+                                <a
+                                    href={item.link}
+                                    target="_blank"
+                                    // py-4 px-10
+                                    className="hover:scale-105 my-4 p-5 flex items-center justify-center flex-col border-2 h-full w-full border-moving-orange-01-35 rounded-2xl transition duration-200 ease-in-out"
+                                    key={index}
+                                >
+                                    <div className="w-100 flex items-center justify-center"><img className="rounded-2xl" src={item.url} alt={item.alt}/></div>
+                                    <p className="mt-4 text-sm font-light">{item.site}</p>
+                                </a>
+                            )
+                        })}
+                    </article>
+                    <hr className="rounded-full border-4 w-4/6 md:w-5/6 mb-12 border-moving-orange-01-35" />
+                </section>
+            </main>
+            <Footer/>
+        </> 
     )
 }

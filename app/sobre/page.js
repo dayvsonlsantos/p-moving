@@ -1,6 +1,9 @@
+import Footer from "@/components/footer";
 import { IconAboutUs } from "@/components/icons";
 import Image from "@/components/image";
 import Logo from "@/components/logo";
+import Navbar from "@/components/navbar";
+import NavbarMobile from "@/components/navbar_mobile";
 
 let pageContent = {
     headerInfo: 'Conheça a Moving RH em três passos e descubra um novo caminho para o sucesso da sua empresa.',
@@ -76,104 +79,109 @@ let pageContent = {
 
 let imageDetails = {
     mobile: {
-        src: './bg_home_mobile.webp',
+        src: './bg_quem_somos_mobile.webp',
         alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
     },
     hd: {
-        src: './bg_home_hd.webp',
+        src: './bg_quem_somos_hd.webp',
         alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
     },
     fullhd: {
-        src: './bg_home_fullhd.webp',
+        src: './bg_quem_somos_fullhd.webp',
         alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
     },
     ultrawide: {
-        src: './bg_home_ultrawide.webp',
+        src: './bg_quem_somos_ultrawide.webp',
         alt: 'Três pessoas sentadas conversando numa reunião de negócios.'
     },
 }
 
 export default function Sobre() {
     return (
-        <main className="w-full">
-            <Logo srcLogo={"./logo.svg"} />
-            {/* small, medium, larger and extra-larger are screen measurements, configured in tailwinds.config.js */}
+        <>
+            <NavbarMobile/>
+            <Navbar />
+            <main className="w-full">
+                <Logo srcLogo={"/logo.svg"} />
+                {/* small, medium, larger and extra-larger are screen measurements, configured in tailwinds.config.js */}
 
-            <Image imageDetails={imageDetails}/>
-           
-            <section className="flex items-center justify-center w-full flex-col">
-                <div className="flex items-center justify-center w-20 h-20 rounded-full bg-moving-orange-01-35">
-                    {/* <img className="w-3/5" src={'./icons/icon_aboutus.svg'} alt={'Icone ilustrando três pessoas'} /> */}
-                    <IconAboutUs />
-                </div>
-                <article className="my-8 flex items-center justify-center w-full flex-col">
-                    <p className="text-sm larger:text-base extra-larger:text-lg w-3/5 md:w-4/5 2xl:w-3/4 text-justify mb-4 flex items-center justify-center">
-                        {pageContent.headerInfo}
-                    </p>
+                <Image imageDetails={imageDetails}/>
+            
+                <section className="flex items-center justify-center w-full flex-col">
+                    <div className="flex items-center justify-center w-20 h-20 rounded-full bg-moving-orange-01-35">
+                        {/* <img className="w-3/5" src={'./icons/icon_aboutus.svg'} alt={'Icone ilustrando três pessoas'} /> */}
+                        <IconAboutUs />
+                    </div>
+                    <article className="my-8 flex items-center justify-center w-full flex-col">
+                        <p className="text-sm larger:text-base extra-larger:text-lg w-3/5 md:w-4/5 2xl:w-3/4 text-justify mb-4 flex items-center justify-center">
+                            {pageContent.headerInfo}
+                        </p>
 
-                    <ol className="text-sm list-decimal larger:text-base extra-larger:text-lg w-3/5 md:w-4/5 2xl:w-3/4 text-justify my-6 flex items-center justify-center flex-col">
+                        <ol className="text-sm list-decimal larger:text-base extra-larger:text-lg w-3/5 md:w-4/5 2xl:w-3/4 text-justify my-6 flex items-center justify-center flex-col">
+                            {
+                                pageContent.orderList.map(function(element){
+                                    return (
+                                        <li className="mb-4 w-11/12 before:text-moving-orange-01 before:mr-2">
+                                            <span className="text-moving-orange-01 font-normal">{element.title}</span>
+                                            <p className="mt-3">{element.content}</p>
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ol>
+                        
                         {
-                            pageContent.orderList.map(function(element){
-                                return (
-                                    <li className="mb-4 w-11/12 before:text-moving-orange-01 before:mr-2">
-                                        <span className="text-moving-orange-01 font-normal">{element.title}</span>
-                                        <p className="mt-3">{element.content}</p>
-                                    </li>
+                            pageContent.paragraph.map(function(element) {
+                                return(
+                                    <p className="text-sm larger:text-base extra-larger:text-lg w-3/5 md:w-4/5 2xl:w-3/4 text-justify mb-4 flex items-center justify-center indent-8">
+                                        {element.content}
+                                    </p>
                                 )
                             })
                         }
-                    </ol>
-                    
-                    {
-                        pageContent.paragraph.map(function(element) {
-                            return(
-                                <p className="text-sm larger:text-base extra-larger:text-lg w-3/5 md:w-4/5 2xl:w-3/4 text-justify mb-4 flex items-center justify-center indent-8">
-                                    {element.content}
-                                </p>
-                            )
-                        })
-                    }
 
-                    <p className="font-normal text-moving-orange-01 text-base larger:text-lg extra-larger:text-xl w-3/5 md:w-4/5 2xl:w-3/4 text-justify my-8 flex items-center justify-center">
-                        {pageContent.topic}
-                    </p>
+                        <p className="font-normal text-moving-orange-01 text-base larger:text-lg extra-larger:text-xl w-3/5 md:w-4/5 2xl:w-3/4 text-justify my-8 flex items-center justify-center">
+                            {pageContent.topic}
+                        </p>
 
-                    {
-                        pageContent.itens.map(function(element) {
-                            if(element.name != 'Valores'){
-                                return (
-                                    <section className="w-3/5 md:w-4/5 2xl:w-3/4 my-2">
-                                        <span className="text-base larger:text-lg extra-larger:text-xl font-normal text-moving-orange-01 text-justify mb-4 flex items-center justify-center md:justify-start">{element.name}</span>
-                                        <span className="text-sm font-normal larger:text-base extra-larger:text-lg text-justify mb-4 flex items-center justify-start">{element.highlighted}</span>
-                                        <p className="text-sm larger:text-base extra-larger:text-lg text-justify mb-4 flex items-center justify-start">{element.paragraph}</p>
-                                    </section>
-                                )
-                            } else {
-                                return(
-                                    <section className="w-3/5 md:w-4/5 2xl:w-3/4 my-2">
-                                        <span className="text-base larger:text-lg extra-larger:text-xl font-normal text-moving-orange-01 text-justify mb-4 flex items-center justify-center md:justify-start">{element.name}</span>
-                                        <ul>
-                                        {
-                                            element.content.map(function(element){
-                                                return(
-                                                    <li className="list-disc ml-5">
-                                                        <p className="text-sm larger:text-base extra-larger:text-lg text-justify mb-4">
-                                                            <span className="mr-2 font-normal">{element.item_name}</span>
-                                                            {element.item_description}
-                                                        </p>
-                                                    </li>
-                                                )
-                                            })
-                                        }
-                                        </ul>
-                                    </section>
-                                )
-                            }
-                        })
-                    }
-                </article>
-                {/* <hr className="rounded-full border-4 w-4/6 md:w-5/6 mb-12 border-moving-orange-01-35" /> */}
-            </section>
-        </main>
+                        {
+                            pageContent.itens.map(function(element) {
+                                if(element.name != 'Valores'){
+                                    return (
+                                        <section className="w-3/5 md:w-4/5 2xl:w-3/4 my-2">
+                                            <span className="text-base larger:text-lg extra-larger:text-xl font-normal text-moving-orange-01 text-justify mb-4 flex items-center justify-center md:justify-start">{element.name}</span>
+                                            <span className="text-sm font-normal larger:text-base extra-larger:text-lg text-justify mb-4 flex items-center justify-start">{element.highlighted}</span>
+                                            <p className="text-sm larger:text-base extra-larger:text-lg text-justify mb-4 flex items-center justify-start">{element.paragraph}</p>
+                                        </section>
+                                    )
+                                } else {
+                                    return(
+                                        <section className="w-3/5 md:w-4/5 2xl:w-3/4 my-2">
+                                            <span className="text-base larger:text-lg extra-larger:text-xl font-normal text-moving-orange-01 text-justify mb-4 flex items-center justify-center md:justify-start">{element.name}</span>
+                                            <ul>
+                                            {
+                                                element.content.map(function(element){
+                                                    return(
+                                                        <li className="list-disc ml-5">
+                                                            <p className="text-sm larger:text-base extra-larger:text-lg text-justify mb-4">
+                                                                <span className="mr-2 font-normal">{element.item_name}</span>
+                                                                {element.item_description}
+                                                            </p>
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+                                            </ul>
+                                        </section>
+                                    )
+                                }
+                            })
+                        }
+                    </article>
+                    {/* <hr className="rounded-full border-4 w-4/6 md:w-5/6 mb-12 border-moving-orange-01-35" /> */}
+                </section>
+            </main>
+            <Footer/>
+        </>
     )
 }

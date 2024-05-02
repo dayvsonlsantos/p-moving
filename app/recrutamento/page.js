@@ -1,6 +1,9 @@
+import Footer from "@/components/footer";
 import { IconAboutUs } from "@/components/icons";
 import Image from "@/components/image";
 import Logo from "@/components/logo";
+import Navbar from "@/components/navbar";
+import NavbarMobile from "@/components/navbar_mobile";
 
 let pageContent = {
     paragraph: [
@@ -46,46 +49,51 @@ let imageDetails = {
 
 export default function Recrutamento() {
     return (
-        <main className="w-full">
-            <Logo srcLogo={"./logoWhite.svg"} />
-            {/* small, medium, larger and extra-larger are screen measurements, configured in tailwinds.config.js */}
+        <>
+            <NavbarMobile/>
+            <Navbar />
+            <main className="w-full">
+                <Logo srcLogo={"/logoWhite.svg"} />
+                {/* small, medium, larger and extra-larger are screen measurements, configured in tailwinds.config.js */}
 
-            <Image imageDetails={imageDetails}/>
-           
-            <section className="flex items-center justify-center w-full flex-col">
-                <div className="flex items-center justify-center w-20 h-20 rounded-full bg-moving-orange-01-35">
-                    {/* <img className="w-3/5" src={'./icons/icon_aboutus.svg'} alt={'Icone ilustrando três pessoas'} /> */}
-                    <IconAboutUs />
-                </div>
-                <article className="my-12 flex items-center justify-center w-full flex-col">
-                    <p className="text-sm larger:text-base extra-larger:text-lg w-3/5 md:w-4/5 2xl:w-3/4 text-justify mb-4 flex items-center justify-center">
-                        {pageContent.headerInfo}
-                    </p>
+                <Image imageDetails={imageDetails}/>
+            
+                <section className="flex items-center justify-center w-full flex-col">
+                    <div className="flex items-center justify-center w-20 h-20 rounded-full bg-moving-orange-01-35">
+                        {/* <img className="w-3/5" src={'./icons/icon_aboutus.svg'} alt={'Icone ilustrando três pessoas'} /> */}
+                        <IconAboutUs />
+                    </div>
+                    <article className="my-12 flex items-center justify-center w-full flex-col">
+                        <p className="text-sm larger:text-base extra-larger:text-lg w-3/5 md:w-4/5 2xl:w-3/4 text-justify mb-4 flex items-center justify-center">
+                            {pageContent.headerInfo}
+                        </p>
 
-                    <ol className="text-sm larger:text-base extra-larger:text-lg w-3/5 md:w-4/5 2xl:w-3/4 text-justify my-6 flex items-center justify-center flex-col">
-                        {
+                        <ol className="text-sm larger:text-base extra-larger:text-lg w-3/5 md:w-4/5 2xl:w-3/4 text-justify my-6 flex items-center justify-center flex-col">
+                            {
+                                pageContent.paragraph.map(function(element) {
+                                    return (
+                                        <li className="mb-4 w-11/12 before:content-['•'] before:text-moving-orange-01 before:mr-2">
+                                            <span>{element.content}</span>
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ol>
+                        
+                        {/* {
                             pageContent.paragraph.map(function(element) {
-                                return (
-                                    <li className="mb-4 w-11/12 before:content-['•'] before:text-moving-orange-01 before:mr-2">
-                                        <span>{element.content}</span>
-                                    </li>
+                                return(
+                                    <p className="text-sm larger:text-base extra-larger:text-lg w-3/5 md:w-4/5 2xl:w-3/4 text-justify mb-4 flex items-center justify-start indent-8">
+                                        {element.content}
+                                    </p>
                                 )
                             })
-                        }
-                    </ol>
-                    
-                    {/* {
-                        pageContent.paragraph.map(function(element) {
-                            return(
-                                <p className="text-sm larger:text-base extra-larger:text-lg w-3/5 md:w-4/5 2xl:w-3/4 text-justify mb-4 flex items-center justify-start indent-8">
-                                    {element.content}
-                                </p>
-                            )
-                        })
-                    } */}
-                </article>
-                <hr className="rounded-full border-4 w-4/6 md:w-5/6 mb-12 border-moving-orange-01-35" />
-            </section>
-        </main>
+                        } */}
+                    </article>
+                    <hr className="rounded-full border-4 w-4/6 md:w-5/6 mb-12 border-moving-orange-01-35" />
+                </section>
+            </main>
+            <Footer/>
+        </>
     )
 }

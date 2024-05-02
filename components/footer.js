@@ -8,7 +8,7 @@ export default function Footer() {
                 <article className="flex items-center justify-start flex-col w-full md:w-1/2 mb-6">
                     <div className="w-full flex items-center justify-center md:justify-start">
                         <img
-                            src={'./logo.svg'}
+                            src={'/logo.svg'}
                             alt="Logo da empresa Moving"
                             className="w-36"
                         />
